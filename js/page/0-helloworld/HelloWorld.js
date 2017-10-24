@@ -1,4 +1,5 @@
 /**
+ * Hello world 认识React Native
  * @author liusong
  * @date 2017/10/18
  */

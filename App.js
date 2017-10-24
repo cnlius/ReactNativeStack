@@ -10,6 +10,7 @@ import {
     Text,
     View
 } from 'react-native';
+import DefineComponent from './js/page/1-component/DefineComponent'
 
 export default class App extends Component<{}> {
     render() {
@@ -18,6 +19,8 @@ export default class App extends Component<{}> {
                 <Text style={styles.welcome}>
                     Welcome to React Native!
                 </Text>
+                {/*1 自定义组件的使用*/}
+                <DefineComponent name='Hello!'/>
             </View>
         );
     }
