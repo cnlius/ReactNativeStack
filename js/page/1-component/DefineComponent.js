@@ -25,3 +25,34 @@ export default class DefineComponent extends Component {
         );
     }
 }
+
+// ES5语法定义组件：
+// 备注：react16版本不支持 React.createClass方式
+// var DefineComponent=React.createClass({
+//     render(){
+//         return <Text style={{fontSize:20,backgroundColor:'green'}}>ES5 define component</Text>
+//     }
+// })
+
+
+/**
+ * 创建组件的三种方式
+ * 3. 函数式定义组件
+ * 无状态，无法使用this指针
+ */
+//无props
+// function DefineComponent() {
+//     return (
+//         <Text style={{fontSize:20,backgroundColor:'blue'}}>Func define component </Text>
+//     );
+// }
+// module.exports=DefineComponent;
+
+//有props
+// function DefineComponent(props) {
+//     return (
+//         <Text style={{fontSize:20,backgroundColor:'blue'}}>Func define component {props.name}</Text>
+//     )
+// }
+// module.exports=DefineComponent;
+
