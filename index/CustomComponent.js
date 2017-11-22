@@ -1,25 +1,20 @@
 /**
- * Sample React Native App
- *
- * react-native 开始
- * https://github.com/facebook/react-native
- * @flow
+ * @author liusong
+ * @date 2017/11/22
  */
-
 import React, {Component} from 'react';
 import {
     StyleSheet,
-    Text,
     View
 } from 'react-native';
+import DefineComponent from '../js/page/1-component/DefineComponent'
 
-export default class App extends Component<{}> {
+export default class CustomComponent extends Component{
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    Welcome to React Native!
-                </Text>
+                {/*1 自定义组件的使用*/}
+                <DefineComponent name='Hello!'/>
             </View>
         );
     }
@@ -31,10 +26,5 @@ const styles = StyleSheet.create({
         justifyContent: 'center', //flex子项在主轴（横轴）方向上的对齐方式：位于容器中心；
         alignItems: 'center',  //flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式
         backgroundColor: '#F5FCFF',
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
+    }
 });
