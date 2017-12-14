@@ -12,7 +12,7 @@ import {AppRegistry} from 'react-native';
 // AppRegistry.registerComponent('RNTechStack', () => HelloWord)
 
 // 2.自定义组件的三种方式，并导出使用
-import CustomComponent from './index/DefineComponent';
-AppRegistry.registerComponent('RNTechStack', () => CustomComponent);
+import TestDefineComponent from './index/TestDefineComponent';
+AppRegistry.registerComponent('RNTechStack', () => TestDefineComponent);
 
 

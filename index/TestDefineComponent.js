@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import DefineComponent from '../js/page/1-component/DefineComponent'
 
-export default class DefineComponent extends Component{
+export default class TestDefineComponent extends Component{
     render() {
         return (
             <View style={styles.container}>

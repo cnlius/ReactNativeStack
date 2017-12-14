@@ -12,9 +12,12 @@ import {
 
 export default class LifecycleComponent extends Component{
     render(){
+        console.log('--render--')
         return(
             <View>
-
+                <Text style={{fontSize:20, backgroundColor:'red'}}>
+                    组件的生命周期
+                </Text>
             </View>
         );
     }
