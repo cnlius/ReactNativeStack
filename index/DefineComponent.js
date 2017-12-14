@@ -1,4 +1,5 @@
 /**
+ * 组件的定义和导入导出
  * @author liusong
  * @date 2017/11/22
  */
@@ -9,7 +10,7 @@ import {
 } from 'react-native';
 import DefineComponent from '../js/page/1-component/DefineComponent'
 
-export default class CustomComponent extends Component{
+export default class DefineComponent extends Component{
     render() {
         return (
             <View style={styles.container}>
