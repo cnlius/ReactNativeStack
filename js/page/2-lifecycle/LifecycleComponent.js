@@ -41,7 +41,7 @@ export default class LifecycleComponent extends Component {
         console.log('--render--')
         return (
             <View>
-                <Text style={{fontSize: 20, backgroundColor: 'red'}}>
+                <Text style={{fontSize: 18, backgroundColor: 'red'}}>
                     组件的生命周期
                 </Text>
                 <Text style={styles.clickButton}
