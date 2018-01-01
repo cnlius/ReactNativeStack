@@ -26,7 +26,6 @@ export default class PropsDetail extends Component{
     }
 
     render(){
-
         return(
             <View>
                 <Text style={styles.textStyle}>
