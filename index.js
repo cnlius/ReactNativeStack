@@ -12,11 +12,15 @@ import {AppRegistry} from 'react-native';
 // AppRegistry.registerComponent('RNTechStack', () => HelloWord)
 
 // 2.组件的定义，变量和方法的导入导出
-import TestEIComponent from './index/TestEIComponent';
-AppRegistry.registerComponent('RNTechStack', () => TestEIComponent);
+// import TestEIComponent from './index/TestEIComponent';
+// AppRegistry.registerComponent('RNTechStack', () => TestEIComponent);
 
-// 2.自定义组件的三种方式，并导出使用
+// 3.自定义组件的三种方式，并导出使用
 // import TestLifecycle from './index/TestLifecycle';
 // AppRegistry.registerComponent('RNTechStack', () => TestLifecycle);
+
+// 4.props
+import PropsTest from './index/PropsTest';
+AppRegistry.registerComponent('RNTechStack', () => PropsTest);
 
 
