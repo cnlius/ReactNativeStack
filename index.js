@@ -20,7 +20,11 @@ import {AppRegistry} from 'react-native';
 // AppRegistry.registerComponent('RNTechStack', () => TestLifecycle);
 
 // 4.props
-import PropsTest from './index/PropsTest';
-AppRegistry.registerComponent('RNTechStack', () => PropsTest);
+// import PropsTest from './index/PropsTest';
+// AppRegistry.registerComponent('RNTechStack', () => PropsTest);
+
+// 5.state
+import StateDetail from './js/page/4-state/StateDetail';
+AppRegistry.registerComponent('RNTechStack', () => StateDetail);
 
 
