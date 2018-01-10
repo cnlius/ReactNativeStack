@@ -24,7 +24,15 @@ import {AppRegistry} from 'react-native';
 // AppRegistry.registerComponent('RNTechStack', () => PropsTest);
 
 // 5.state
-import StateDetail from './js/page/4-state/StateDetail';
-AppRegistry.registerComponent('RNTechStack', () => StateDetail);
+// import StateDetail from './js/page/4-state/StateDetail';
+// AppRegistry.registerComponent('RNTechStack', () => StateDetail);
+
+// 6.ref定义方式1：
+// import RefTest from './js/page/5-ref/RefTest';
+// AppRegistry.registerComponent('RNTechStack', () => RefTest);
+
+// 6.ref定义方式2：
+import RefTest2 from './js/page/5-ref/RefTest2';
+AppRegistry.registerComponent('RNTechStack', () => RefTest2);
 
 

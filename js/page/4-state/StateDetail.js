@@ -33,6 +33,11 @@ export default class StateDetail extends Component {
         // });
     }
 
+    //获取state的size属性；
+    getSize(){
+        return this.state.size;
+    }
+
     render() {
         return (
             <View>
