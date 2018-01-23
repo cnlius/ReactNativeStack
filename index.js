@@ -32,7 +32,11 @@ import {AppRegistry} from 'react-native';
 // AppRegistry.registerComponent('RNTechStack', () => RefTest);
 
 // 6.ref定义方式2：
-import RefTest2 from './js/page/5-ref/RefTest2';
-AppRegistry.registerComponent('RNTechStack', () => RefTest2);
+// import RefTest2 from './js/page/5-ref/RefTest2';
+// AppRegistry.registerComponent('RNTechStack', () => RefTest2);
+
+// 7.类的使用
+import TestClass from './index/TestClass';
+AppRegistry.registerComponent('RNTechStack', () => TestClass);
 
 
