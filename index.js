@@ -36,7 +36,11 @@ import {AppRegistry} from 'react-native';
 // AppRegistry.registerComponent('RNTechStack', () => RefTest2);
 
 // 7.类的使用
-import TestClass from './index/TestClass';
-AppRegistry.registerComponent('RNTechStack', () => TestClass);
+// import TestClass from './index/TestClass';
+// AppRegistry.registerComponent('RNTechStack', () => TestClass);
+
+// 8.布局属性
+import LayoutProps from "./js/page/7-layout/LayoutProps";
+AppRegistry.registerComponent('RNTechStack', () => LayoutProps);
 
 
