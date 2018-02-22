@@ -40,7 +40,11 @@ import {AppRegistry} from 'react-native';
 // AppRegistry.registerComponent('RNTechStack', () => TestClass);
 
 // 8.布局属性
-import LayoutProps from "./js/page/7-layout/LayoutProps";
-AppRegistry.registerComponent('RNTechStack', () => LayoutProps);
+// import LayoutProps from "./js/page/7-layout/LayoutProps";
+// AppRegistry.registerComponent('RNTechStack', () => LayoutProps);
+
+// 8.可点击的按钮
+import TouchableTest from "./js/page/8-touchablex/TouchableTest";
+AppRegistry.registerComponent('RNTechStack', () => TouchableTest);
 
 
