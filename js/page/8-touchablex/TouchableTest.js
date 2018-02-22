@@ -29,7 +29,7 @@ export default class TouchableTest extends Component {
                         });
                     }}
                     onLongPress={()=>{
-                        Alert.alert('提示','确认删除吗？',[
+                        Alert.alert('提示','确认长按吗？',[
                             {text:'取消', onPress:()=>{},style:'cancel'},
                             {text:'确认', onPress:()=>{}}
                         ])
@@ -46,8 +46,17 @@ export default class TouchableTest extends Component {
                             content: 'TouchableHighlight'
                         });
                     }}
+                    style={styles.touchableStyle}
+                    activeOpacity={0.3} //需要配合underlayColor使用
+                    underlayColor={'green'}
+                    onHideUnderlay={()=>{
+                        //衬底隐藏时回调
+                    }}
+                    onShowUnderlay={()=>{
+                        //衬底显示时回调
+                    }}
                 >
-                    <View style={styles.buttonStyle}>
+                    <View>
                         <Text>TouchableHighlight</Text>
                     </View>
                 </TouchableHighlight>
@@ -58,6 +67,7 @@ export default class TouchableTest extends Component {
                             content: 'TouchableOpacity'
                         });
                     }}
+                    activeOpacity={0.3}
                 >
                     <View style={styles.buttonStyle}>
                         <Text>TouchableOpacity</Text>
@@ -70,6 +80,7 @@ export default class TouchableTest extends Component {
                             content: 'TouchableNativeFeedback'
                         });
                     }}
+                    background={TouchableNativeFeedback.SelectableBackground()}
                 >
                     <View style={styles.buttonStyle}>
                         <Text>TouchableNativeFeedback</Text>
@@ -91,6 +102,13 @@ const styles = StyleSheet.create({
         marginTop: 5,
         height: 60,
         backgroundColor: 'gray',
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    touchableStyle: {
+        backgroundColor: 'green',
+        height: 60,
+        marginTop: 5,
         justifyContent: 'center',
         alignItems: 'center'
     }
